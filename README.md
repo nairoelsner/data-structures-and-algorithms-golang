@@ -9,7 +9,7 @@ This repository is dedicated to the implementation of algorithms and data struct
    - [X] Selection Sort
    - [X] Bubble Sort
    - [ ] Merge Sort
-   - [ ] Quick Sort
+   - [X] Quick Sort
    - [ ] Heap Sort
 
 **Search Algorithms**
