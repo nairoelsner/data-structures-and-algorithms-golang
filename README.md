@@ -1,4 +1,4 @@
-# data-structures-and-algorithms-golang
+# Data Structures and Algorithms Golang
 
 This repository is dedicated to the implementation of algorithms and data structures in the Go programming language. The goal is familiarizing myself with golang.
 
