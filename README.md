@@ -5,7 +5,7 @@ This repository is dedicated to the implementation of algorithms and data struct
 ## Implemented Algorithms
 
 **Sort Algorithms**
-   - [ ] Insertion Sort
+   - [X] Insertion Sort
    - [ ] Selection Sort
    - [ ] Bubble Sort
    - [ ] Merge Sort
