@@ -13,8 +13,8 @@ This repository is dedicated to the implementation of algorithms and data struct
    - [ ] Heap Sort
 
 **Search Algorithms**
-   - [ ] Linear Search
-   - [ ] Binary Search
+   - [X] Linear Search
+   - [X] Binary Search
 
 **Tree Algorithms**
    - [ ] Pre-order
@@ -28,10 +28,10 @@ This repository is dedicated to the implementation of algorithms and data struct
 ## Implemented Data Structures
 
 **Basic**
-   - [ ] Linked List
+   - [X] Linked List
    - [ ] Double Linked List
-   - [ ] Queue
-   - [ ] Stack
+   - [X] Queue
+   - [X] Stack
    - [ ] Hash Table
    - [ ] Binary Search Tree
 
