@@ -15,7 +15,7 @@ func (q *LinkedQueue) GetLength() int {
 func (q *LinkedQueue) Enqueue(value any) error {
 	newNode := &Node{value: value}
 
-	if q.start == nil {
+	if q.length == 0 {
 		q.start = newNode
 		q.end = newNode
 	} else {
@@ -42,7 +42,7 @@ func (q *LinkedQueue) Dequeue() (any, error) {
 
 func (q *LinkedQueue) Read() (any, error) {
 	if q.length == 0 {
-		return nil, errors.New("Can't dequeue empty queue!")
+		return nil, errors.New("Can't read from empty queue!")
 	}
 	return q.start.value, nil
 }
