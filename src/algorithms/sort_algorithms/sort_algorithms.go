@@ -27,3 +27,15 @@ func InsertionSort(list *[]int) {
 		(*list)[j+1] = key
 	}
 }
+
+func BubbleSort(list *[]int) {
+	for i := 0; i < len(*list); i++ {
+		for j := len(*list) - 1; j > i; j-- {
+			if (*list)[j] < (*list)[j-1] {
+				tmp := (*list)[j-1]
+				(*list)[j-1] = (*list)[j]
+				(*list)[j] = tmp
+			}
+		}
+	}
+}
