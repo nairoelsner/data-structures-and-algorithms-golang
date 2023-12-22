@@ -64,3 +64,47 @@ func partition(list *[]int, p int, r int) int {
 	(*list)[i+1], (*list)[r] = (*list)[r], (*list)[i+1]
 	return i + 1
 }
+
+func MergeSort(list *[]int) {
+	mergeSort(list, 0, len(*list)-1)
+}
+
+func mergeSort(list *[]int, p int, r int) {
+	if p < r {
+		q := (p + r) / 2
+		mergeSort(list, p, q)
+		mergeSort(list, q+1, r)
+		merge(list, p, q, r)
+	}
+}
+
+func merge(list *[]int, p int, q int, r int) {
+	n1 := q - p + 1
+	n2 := r - q
+
+	left := make([]int, n1)
+	right := make([]int, n2)
+
+	for i := 0; i < n1; i++ {
+		left[i] = (*list)[p+i]
+	}
+
+	for i := 0; i < n2; i++ {
+		right[i] = (*list)[q+i+1]
+	}
+
+	left = append(left, int(^uint(0)>>1))
+	right = append(right, int(^uint(0)>>1))
+
+	i := 0
+	j := 0
+	for k := p; k <= r; k++ {
+		if left[i] <= right[j] {
+			(*list)[k] = left[i]
+			i++
+		} else {
+			(*list)[k] = right[j]
+			j++
+		}
+	}
+}

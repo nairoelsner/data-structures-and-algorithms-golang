@@ -8,7 +8,7 @@ This repository is dedicated to the implementation of algorithms and data struct
    - [X] Insertion Sort
    - [X] Selection Sort
    - [X] Bubble Sort
-   - [ ] Merge Sort
+   - [X] Merge Sort
    - [X] Quick Sort
    - [ ] Heap Sort
 
